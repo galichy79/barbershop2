@@ -16,7 +16,7 @@ class Barber < ActiveRecord::Base
 end
 
 get '/' do 
-  erb "Hello"
+  erb :index
 
 end
 
