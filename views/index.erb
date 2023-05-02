@@ -2,6 +2,12 @@
 <h2 class="animate__animated animate__backInDown">Welcome. We are open.</h2><br>
 
 <h2>Список наших парикмахеров</h2>
+<% @barbers.each do |barber| %>
+  <p>
+      <%= barber.name %>
+  </p>
+
+<% end %>
 
 
 <table class="table table-striped">
