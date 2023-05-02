@@ -28,16 +28,16 @@
   </div> <br>
 
 
+  <div class="mb-3">
+  <label >Ваш парикмахер:</label>
+  <select name="barber" class="form-select" >
+  
+  <% @barbers.each do |item| %>
+    <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item['name'] %></option>
+  <% end %>
 
 
  
-  <div class="mb-3">
-    <label >Ваш парикмахер:</label>
-    <select name="barber" class="form-select" >
-    
-    <% @barbers.each do |item| %>
-      <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item['name'] %></option>
-    <% end %>
 
 
 
